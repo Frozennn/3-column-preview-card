@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+body {
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Lexend Deca", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+
+h1 {
+  margin-top: 2rem;
+  color: #fff;
+}
+
+.info-text {
+  line-height: 1.5;
+  margin-top: 1.5rem;
+  width: 85%;
+  color: rgba(248, 220, 220, 0.8);
+  height: 200px;
+}
+
+.card-1 {
+  background-color: var(--Bright-orange);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.card-2 {
+  background-color: var(--Dark-cyan);
+}
+
+.card-3 {
+  background-color: var(--Very-dark-cyan);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.card {
+  padding: 5% 3%;
+  padding-right: 0%;
+}
+
+.card h1 {
+  text-transform: uppercase;
+}
+
+.btn {
+  margin-top: 5rem;
+  padding: 5% 12%;
+  border-radius: 20px;
+  border: none;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.btn-card-1 {
+  color: var(--Bright-orange);
+}
+
+.btn-card-2 {
+  color: var(--Dark-cyan);
+}
+
+.btn-card-3 {
+  color: var(--Very-dark-cyan);
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-card-1:hover {
+  background-color: var(--Bright-orange);
+  outline: 1px solid #fff;
+}
+
+.btn-card-2:hover {
+  background-color: var(--Dark-cyan);
+  outline: 1px solid #fff;
+}
+
+.btn-card-3:hover {
+  background-color: var(--Very-dark-cyan);
+  outline: 1px solid #fff;
+}
+
+@media only screen and (max-width: 920px) {
+  html {
+    font-size: 12px;
+  }
+
+  .card-1 {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 8px;
+  }
+
+  .card-3 {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .card {
+    padding-left: 2rem;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .btn {
+    margin-top: 0;
+  }
+
+  .info-text {
+    height: 100px;
+  }
+}
+
+@media (max-width: 399px) {
+  h1 {
+    margin-top: 0rem;
+  }
+
+  .main-container {
+    margin-top: 9rem;
+  }
+
+  .info-text {
+    margin-top: 0.3rem;
+    width: 95%;
+  }
+
+  .btn {
+    margin-top: 2rem;
+  }
+
+  .card {
+    height: 250px;
+  }
+}
