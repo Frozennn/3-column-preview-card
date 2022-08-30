@@ -17,7 +17,7 @@ body {
   min-height: 100vh;
   display: flex;
   /* justify-content: center; */
-   align-items: center; 
+  align-items: center;
 }
 
 .main-container {
@@ -129,6 +129,7 @@ h1 {
 
   .main-container {
     flex-direction: column;
+    width: 65%;
   }
 
   .btn {
@@ -136,7 +137,8 @@ h1 {
   }
 
   .info-text {
-    height: 100px;
+    height: 90px;
+    line-height: 1.5;
   }
 }
 
@@ -146,7 +148,6 @@ h1 {
   }
 
   body {
-    align-items: flex-start;
   }
 
   .info-text {
